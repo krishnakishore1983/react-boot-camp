@@ -1,0 +1,38 @@
+
+
+class Animal {
+constructor(name,age)
+{
+    this.name=name;
+    this.age=age;
+
+}
+
+speak(){
+
+    console.log('My Name is ' + this.name + 'age ' +this.age + ' year old');
+}
+
+}
+//const classinstance=new Animal('Simba',3);
+//classinstance.speak();
+
+class Lion extends Animal
+{
+constructor(name,age,color,speed)
+{
+super(name,age);
+this.color=color;
+this.speed=speed;
+}
+
+roar()
+{
+    console.log( 'color '+ this.color + 'speed' + this.speed );
+}
+
+}
+const lioninstance=new Lion('Mufasa',5,'brown',25);
+lioninstance.speak();
+lioninstance.roar();
+console.log(lioninstance)
