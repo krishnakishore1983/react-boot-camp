@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-
 const Joke=({joke:{id,setup,punchline}})=>
 (<p style={{margin:20}} key={id}>{setup}<em>{punchline}</em></p>)
 

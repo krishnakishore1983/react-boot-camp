@@ -4,7 +4,6 @@ import PROJECTSCOMP from './Projects';
 import SOCIALPROFILE from './SOCIALPROFILE';
 import profileimage from '../assets/profile.png'
 import Title from './Title';
-import Jokes from './Jokes';
 // function App() {
  
 //   return (
@@ -35,6 +34,7 @@ class App extends Component{
   render(){
       return(
           <div className="classcompo">
+       
           <img src={profileimage} alt="profile" className="profile" />
       <h1>Hello</h1>
           <p>My name is Krishna Kishore</p>
@@ -53,12 +53,13 @@ class App extends Component{
           <PROJECTSCOMP />
           <hr/>
           <SOCIALPROFILE />
-          <hr/>
-          <Jokes />
+         
           </div>
       );
   }
 }
+
+
 export default App;
 
 
